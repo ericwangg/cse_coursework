@@ -1,0 +1,188 @@
+"Problem Set 7 - Eric Wang"
+(define (make-tree value left right) (list value left right))
+
+(define (value tree) (car tree))
+
+(define (left tree) (cadr tree))
+
+(define (right tree) (caddr tree))
+
+(define empty-tree? null?)
+
+(define (leaf? T)
+  (and (empty-tree? (left T)) (empty-tree? (right T))))
+
+(define (two-subtrees? T)
+  (and (not (empty-tree? (left T))) (not (empty-tree? (right T)))))
+
+(define (one-subtree? T)
+  (or (not (empty-tree? (left T))) (not (empty-tree? (right T)))))
+
+(define example
+  (make-tree
+   '+
+   (make-tree
+    '* (make-tree 2 '() '()) (make-tree 3 '() '()))
+   (make-tree
+    '*
+    (make-tree
+     '+
+     (make-tree 4 '() '())
+     (make-tree '- '() (make-tree 5 '() '())))
+    (make-tree '1/ '() (make-tree 6 '() '())))))
+
+"1 - Associated value of tree to arthmestic parse"
+(define (apt-value T)
+  (cond ((empty-tree? T) 0)
+        ((leaf? T) (value T))
+        ((and (two-subtrees? T) (eq? (value T) '+))
+         (+ (apt-value (left T)) (apt-value (right T))))
+        ((and (two-subtrees? T) (eq? (value T) '*))
+         (* (apt-value (right T)) (apt-value (left T))))
+        ((and (one-subtree? T) (eq? (value T) '-))
+         (* -1 (apt-value (right T))))
+        ((and (one-subtree? T) (eq? (value T) '1/))
+         (/ 1 (apt-value (right T))))))
+
+(apt-value example)
+
+"2A - Prefix Notation, returns list from preorder scan"
+(define (prefix T)
+  (if (null? T)
+      '()
+      (append (list (value T))
+              (prefix (left T))
+              (prefix (right T)))))
+
+(prefix example)
+
+"2B - Postfix Transversal, returns list in postfix notation"
+(define (postfix T)
+  (if (null? T)
+      '()
+      (append (postfix (left T))
+              (postfix (right T))
+              (list (value T)))))
+
+(postfix example)
+
+"2C - Infix expression list, Parenthsized"
+(define (infix T)
+  (cond ((eq? (value T) '()) '())
+        ((leaf? T) (value T))
+        ((eq? (value T) '+)
+         (list (infix (left T))
+               (value T)
+               (infix (right T))))
+        ((eq? (value T) '*)
+         (list (infix (left T))
+               (value T)
+               (infix (right T))))
+        ((eq? (value T) '-)
+         (list (value T)
+               (infix (right T))))
+        ((eq? (value T) '1/)
+         (list (value T) (infix (right T))))))
+
+(infix example)
+
+"3A - bst-element?, "
+(define (symbol>? a b)
+  (string>? (symbol->string a)(symbol->string b)))
+
+(define (symbol<? a b)
+  (string<? (symbol->string a)(symbol->string b)))
+
+(define (bst-element? item bs-tree)
+  (cond ((empty-tree? bs-tree) #f)
+        ((eq? item (value bs-tree)) #t)
+        ((symbol>? item (value bs-tree))
+         (bst-element? item (right bs-tree)))
+        ((symbol<? item (value bs-tree))
+         (bst-element? item (left bs-tree)))))
+
+"3B - bst-insert, evaluates BST after item has been inserted"
+(define (bst-insert item bs-tree)
+  (cond ((empty-tree? bs-tree) (make-tree item '() '() ))
+        ((eq? item (value bs-tree)) bs-tree)
+        ((symbol<? item (value bs-tree)) (make-tree (value bs-tree)
+                                                    (bst-insert item (left bs-tree))
+                                                    (right bs-tree)))
+        (else (make-tree (value bs-tree)
+                         (left bs-tree)
+                         (bst-insert item (right bs-tree))))))
+
+(bst-insert 'fred (make-tree 'barney '() '()))
+
+"3C - bst-smallest, evaluates to smallest value in bs-tree"
+(define (bst-smallest bs-tree)
+  (if (empty-tree? bs-tree)
+      'undefined
+      (if (leaf? bs-tree)
+          (value bs-tree)
+          (bst-smallest (left bs-tree)))))
+
+"3D - bst-largest, evaluates to largest value in bs-tree"
+(define (bst-largest bs-tree)
+  (if (empty-tree? bs-tree)
+      'undefined
+      (if (leaf? bs-tree)
+          (value bs-tree)
+          (bst-largest (right bs-tree)))))
+
+"          (cond ((and (empty-tree? bst1) (empty-tree? bst2)) #t)
+                ((or (empty-tree? bst1) (empty-tree bst2)) #f)
+                ((and (eq? (value bst1) (value bst2))
+                      (and (bst-equal? (left bst1) (left bst2))
+                           (bst-equal? (right bst1) (right bst2)))) #t))"
+
+"3F - bst-superset?, 2 BSTs have same set of values"
+(define (bst-set-equal? bst1 bst2)
+  (cond ((and (empty-tree? bst1) (empty-tree? bst2)) #f)
+        ((or (empty-tree? bst1) (empty-tree bst2)) #f)
+        ((and (eq? (bst-superset? bst1 (left bst2))
+                   (bst-superset? bst1 (right bst2)))) #t)
+        (else #f)))
+
+"3G"
+(define (bst-set-equal? bst1 bst2)
+  (and (bst-superset? bst1 bst2)
+       (bst-superset? bst1 bst2)))
+
+"4A"
+(define (bst-delete-min bst)
+  (cond ((null? bst) bst)
+        ((null? (left bst)) (right bst))
+        (else (make-tree (value bst) (bst-delete-min (left bst)) (right bst)))))
+"4B"
+(define (bst-delete-max bst)
+  (cond ((null? bst) bst)
+        ((null? (right bst)) (left bst))
+        (else (make-tree (value bst)
+                         (left bst)
+                         (bst-delete-max (right bst))))))
+
+"4C"
+(define (bst-delete val bst)
+  (cond ((null? bst) bst)
+        ((symbol<? val (value bst))
+         (make-tree (value bst)
+                    (bst-delete val (left bst))
+                    (bst-right bst)))
+        ((symbol>? val (value bst))
+         (make-tree (value-bst)
+                    (left bst)
+                    (bst-delete val (right bst))))
+        (else (bst-delete2 bst))))
+
+(define (bst-delete2 bst)
+  (define (bst-max-value bst)
+    (cond ((null? (right bst)))))
+  (define (left-max bst)
+    (let ((max (bst-max-value (left bst))))
+      (make-tree max
+                 (bst-delete max (left bst))
+                 *right bst)))
+  (cond ((null? (left bst)) (right bst))
+        ((null? (right bst)) (left bst))
+        (else (left-max bst))))

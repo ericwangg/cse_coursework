@@ -1,0 +1,63 @@
+"Problem Set 9 - Eric Wang"
+
+"1A - Clock"
+(define (make-clock clock-time)
+  (let ((clock-hour (/ clock-min 60))
+        (clock-min 
+    (define (tick)
+      (
+    (define (time)
+      
+    (define (military)
+      
+    (lambda (clock-work)
+      (cond ((eq? clock-work time) time)
+            ((eq? clock-work tick) tick)
+            ((eq? clock-work military) military)))
+
+(define myclock (make-clock 
+"2 - Evluation of Postfix Expressions"
+(define (make-stack)
+  (let ((stack '() ))
+    (define (is-empty?)
+      (null? stack))
+    (define (push x)
+      (set! stack (cons x stack)))
+    (define (top)
+      (car stack))
+    (define (pop)
+      (let ((value (car stack)))
+        (begin (set! stack (cdr stack))
+               value)))
+    (lambda (meth-name) 
+      (cond ((eq? meth-name 'is-empty) is-empty?)
+            ((eq? meth-name 'push) push)
+            ((eq? meth-name 'top) top)
+            ((eq? meth-name 'pop) pop)))))
+
+(define (eval-postfix p)
+  (let ((postfix p)
+        (ops (make-stack)))
+    (define (process-operation op)
+      (cond ((eq? op #\+) ((ops 'push) (+ ((ops ('pop'))
+                                           ((ops ('pop)))))))
+            ((eq? op #\-) ((ops 'push) (let ((op2 ((ops 'pop)))
+                                             (op1 ((ops 'pop))))
+                                         (- op1 op2))))
+            ((eq? op #\*) ((ops 'push) (* ((ops 'pop)) ((ops 'pop)))))
+            ((eq? op #\/) ((ops 'push) (let ((op2 ((ops 'pop)))
+                                             (op1 ((ops 'pop))))
+                                         (/ op1 op2))))
+            ((eq? op #\^) ((ops 'push) (let ((op2 ((ops 'pop)))
+                                             (op1 ((ops 'pop))))
+                                         (expt op1 op2))))))
+    (define (process-exp)
+      (cond ((null? postfix) ((ops 'top)))
+            ((number? (car postfix)) (begin ((ops 'push) (car postfix))
+                                            (set! postfix (cdr postfix))
+                                            (process-exp)))
+            (else (begin (process-operation (car postfix))
+                         (set! postfix (cdr postfix))
+                         (process-exp)))))
+    (begin (process-exp)
+           ((ops 'top)))))

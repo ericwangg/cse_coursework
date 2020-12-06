@@ -1,0 +1,4 @@
+> num_entries:  4  sp:  3 stack[  3]:s3
+> num_entries:  8  sp:  4 stack[  4]:s4 increase num_entries to 8
+> num_entries: 12  sp:  8 stack[  8]:s8 num_entries should be 12
+> num_entries: 16  sp: 12 stack[ 12]:s12

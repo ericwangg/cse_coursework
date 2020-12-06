@@ -1,0 +1,18 @@
+$ ./hangman 8
+To help debugging: the word is pride
+-----
+e
+----e
+a
+----e
+t
+----e
+i
+--i-e
+r
+-ri-e
+p
+pri-e
+d
+pride
+The word is pride.

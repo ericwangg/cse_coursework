@@ -1,0 +1,47 @@
+"Lab 9 - Eric Wang"
+(define (create-heap v H1 H2)
+  (list v H1 H2))
+
+(define (h-min H) (car H))
+
+(define (left H) (cadr H))
+
+(define (right H) (caddr H))
+
+"1A heap-insert, adds element to heap w/ 1st order relation"
+(define (heap-insert f x H)
+  (cond ((null? H) '())
+        ((eq? f <) (
+        ((eq? f >) (
+
+;min-heap
+(heap-insert < 100 (heap-insert < 10 (list)))
+(10 () (100 () ()))
+
+;max-heap
+(heap-insert > 100 (heap-insert > 10 (list)))
+(100 () (10 () ()))
+
+"1B - heap-insert-list, inserts all elements in list into heap w/ 1st order relation"
+
+
+"1C - combine, combines 2 heaps"
+
+
+;(define Ha (heap-insert-list > (list 9 5 7 3) (list)))
+;(define Hb (heap-insert-list > (list 2 8 4 6) (list)))
+;(combine > Ha Hb)
+
+"1D - empty?, if Heap is empty"
+(define (empty? H)
+  (if (null? H)
+      #t
+      #f))
+
+"1E - heap-remove, removes root, reshuffles heap using 1st order relation"
+(define (heap-remove f H)
+  (cond ((null? H) '())
+        ((eq? f <) (
+        ((eq? f >) (
+
+;(heap-remove > (combine > Ha Hb))

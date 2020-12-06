@@ -1,0 +1,42 @@
+"Lab 10 - Eric Wang"
+
+"1 - Same length lists"
+(define (same-length-list lst1 lst2)
+  (if (
+
+"2 - Isomorphic compound intlists"
+(define (isomorphic? l1 l2)
+  (cond ((and (integer? l1) (integer? l2) #t)
+        ((and (null? l1) (null? l2)) #t)
+        ((or (null? l1) (null? l2)) #f)
+        ((or (not (pair? l1)) (not? (pair? l2))) #f)
+        ((and (isomorphic? (car l1) (car l2))
+              (isomorphic? (cdr l1) (cdr l2))))
+        (else #f))))
+
+;isomorphic lists: #t
+(isomorphic? (list 1 2) (list 3 4))
+
+;two non-isomorphic lists: #f
+(isomorphic? (list 1 (list 2)) (list 3 4))
+
+;an interger and a list: #f
+(isomorphic? 1 (list 3 4)
+
+;two empty litss: #t
+(isomorphic? '() '())
+
+(pair? 23)
+(pair? 23 35)
+
+"3 - Average of all list values"
+(define (lst-avg lst)
+  (if (null? lst)
+      0
+      (
+
+"5 - New-append, append using only cons, car, cdr"
+(define (new-append l1 l2)
+  (cond ((null? l1) l2)
+        ((null? l2) l1)
+        (else (cons (car l1) (new-append (cdr l1) l2)))))

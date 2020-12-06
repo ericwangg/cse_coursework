@@ -1,0 +1,16 @@
+"Lab2 - 2018/09/11"
+
+"Problem 1 - Combinations"
+(define (factorial x)
+ (if (= x 0)
+     1
+     (* x (factorial (- x 1)))))
+
+(define (n-choose-k n k)
+  (/ factorial n)
+  
+
+
+
+"Problem 2 - Exponentiation"
+

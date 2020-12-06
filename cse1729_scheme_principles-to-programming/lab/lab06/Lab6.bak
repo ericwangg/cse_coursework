@@ -1,0 +1,22 @@
+"Lab 6 - Eric Wang"
+
+"Problem 1 - List Functions"
+(define (count-positives lst)
+  (if (> (car lst) 0)
+      1
+      (+ 1 (count-positives (> (cdr lst) 0)))))
+
+(count-positive '(3 -4 5 -6 7))
+
+"Problem 1B - List Product"
+(define (multiply-list f lst)
+  (if (null? lst)
+      0
+      (* car cdr)))
+
+(multiply-list '(1 2 3))
+"Problem 1C - Consecutive Integers"
+(define (consecuive-ints a b)
+  (
+
+"Problem 2 - List Elements"

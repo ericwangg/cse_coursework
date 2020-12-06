@@ -1,0 +1,22 @@
+;;  code that provides random function
+
+;ensure that random is defined at top level
+(define (random) .5)
+
+; initialize random, optionally with given seed between 1 and 2^31-1
+; if no seed given, uses 1043618065
+(define (init-random . user-seed)
+  (define (next-val seed)
+    (let* ((a 16807.0) ; 7^5
+           (m 2147483647.0) ; 2^31-1
+           (t (* a seed)))
+      (- t (* m (floor (/ t m))))))
+  (set! random
+        (let ((seed  (if (null? user-seed) 1043618065 (car user-seed))))
+          (lambda()
+            (set! seed (next-val seed))
+            (/ seed 2147483647.0)))))
+
+(init-random)
+
+; after this, (random) will produce a pseudorandom number r, 0.0 < r < 1.0

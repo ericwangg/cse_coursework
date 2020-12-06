@@ -1,0 +1,60 @@
+# start server
+# Use 'nc localhost 3129' to connect to the server
+# connect to the server and enter "0 1"
+0. Mutex traps (50)
+1. Nightmare of pointers (50)
+2. Return of recursion (50)
+3. Revenge of pipes (50)
+4. A socket's life (50)
+Please select a movie and specify the number tickets you like (e.g., 1 2):
+Thank you! You are all set. Enjoy the movie.
+#
+# connect to the server and enter "0 2"
+0. Mutex traps (49)
+1. Nightmare of pointers (50)
+2. Return of recursion (50)
+3. Revenge of pipes (50)
+4. A socket's life (50)
+Please select a movie and specify the number tickets you like (e.g., 1 2):
+Thank you! You are all set. Enjoy the movie.
+#
+# connect to the server and enter "1 50"
+0. Mutex traps (47)
+1. Nightmare of pointers (50)
+2. Return of recursion (50)
+3. Revenge of pipes (50)
+4. A socket's life (50)
+Please select a movie and specify the number tickets you like (e.g., 1 2):
+Thank you! You are all set. Enjoy the movie.
+#
+# connect to the server and enter "1 1"
+0. Mutex traps (47)
+2. Return of recursion (50)
+3. Revenge of pipes (50)
+4. A socket's life (50)
+Please select a movie and specify the number tickets you like (e.g., 1 2):
+Error: there are not enough tickets.
+#
+# connect to the server and enter "0 80"
+0. Mutex traps (47)
+2. Return of recursion (50)
+3. Revenge of pipes (50)
+4. A socket's life (50)
+Please select a movie and specify the number tickets you like (e.g., 1 2):
+Error: there are not enough tickets.
+#
+# connect to the server and enter "100 1"
+0. Mutex traps (47)
+2. Return of recursion (50)
+3. Revenge of pipes (50)
+4. A socket's life (50)
+Please select a movie and specify the number tickets you like (e.g., 1 2):
+Error: we did not find the movie you asked.
+#
+# connect to the server and enter "random strings"
+0. Mutex traps (47)
+2. Return of recursion (50)
+3. Revenge of pipes (50)
+4. A socket's life (50)
+Please select a movie and specify the number tickets you like (e.g., 1 2):
+Error: we could not understand your request.

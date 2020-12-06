@@ -1,0 +1,25 @@
+"Problem 1"
+ (define (usd-gbp usd)
+   (* usd 0.77)
+   
+ (define (gbp-eur gdp)
+   (* gbp 1.11)
+      
+ (define (eur-sek eur)
+   (* eur 10.61)
+
+ (define (usd-gbp usd)
+   (gbp-eur
+    (eur-sek
+     (usd-sek usd))))
+
+"A - USD Amount"
+ (usd-gbp 175)
+
+"B - GBP Amount"
+ (gbp-eur 20)
+   
+"C - SEK Amount"
+ (eur-sek 240)
+
+"Problem 2"

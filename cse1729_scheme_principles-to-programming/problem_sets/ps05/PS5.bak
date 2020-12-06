@@ -1,0 +1,150 @@
+"Problem Set 5 - Eric Wang"
+
+"1A - Prefix"
+(define (is-prefix? a b)
+  (if (= (car a) (car b))
+       #t
+       #f))
+
+(is-prefix? '(1) '(1 2))
+(is-prefix? '(1 2) '(1 2 3))
+
+"1B - Common Prefix"
+(define (longest-common-prefix a b)
+  (cond ((null? a) '())
+        ((null? b) '())
+        ((= (car a) (car b))
+         (cons (car a) (longest-common-prefix (cdr a) (cdr b))))
+        (else '())))
+
+(longest-common-prefix '(1 2) '(1 2 3))
+(longest-common-prefix '(2 3 4) '(2 3 4 5 6))
+(longest-common-prefix '(0 3 9) '(53 6 2 0 9 33 12 2 6))
+
+
+
+"2A - Generalized Consecutives"
+(define (gen-consecutive f a b)
+  (if (> a b)
+      '()
+      (cons (f a) (gen-consecutive f (+ a 1) b))))
+
+"2B - More General Consecutives"
+(define (gen-sequence f a b next stop)
+   (if (> a b)
+      '()
+      (cons (f a) (gen-consecutive f (+ a 1) b)))) 
+
+"3 - Filter"
+(define (filter f lst)
+  (cond ((null? lst) '())
+        ((f (car lst))
+         (cons (car lst) (filter f (cdr lst))))
+        (else (filter f (cdr lst)))))
+
+
+
+"4 - Reverse Boolean of Functions"
+(define (fun-not f)
+  (if (= f #t)
+      #f
+      #t))
+
+"5A - Property holds for Every? list"
+
+
+"5B - Property holds for Some? list"
+
+
+
+"6A - List eval to value at kth position"
+(define (value-at-position lst k)
+  (if (= n 1)
+      (car lst)
+      (value-at-position (cdr lst) (- n 1))))
+
+"6B - Nth primes"
+(define (prime? n)
+  (define (divisor a) (= (modulo n a) 0))
+  (define (smooth k)
+    (and (>= k 2)
+         (or (divisor k)
+             (smooth (- k 1)))))
+  (and (> n 1)
+       (not (smooth (floor (sqrt n))))))
+
+(define (nth-prime-between a b n)
+  (if (= n 0)
+      1
+      (nth-prime-between (+ a 1) (+ b 1) (- n 1))))
+
+"Problem 7 - Complex Numbers"
+;complex data type implementation
+(define (make-complex a b)
+  (cons a b))
+;construct a complex number with real part "a" and imaginary part "b"
+
+(define (real x)
+  (car x))
+; returns the real part of a complex number
+(define (imag x)
+  (cdr x))
+; returns the imaginary part of a complex number
+
+; utilities built from complex datatype
+(define (complex-add x y)
+  (make-complex
+   (+ (real x) (real y))
+   (+ (imag x) (imag y))))
+
+(define (complex-sub x y)
+  (make-complex
+   (- (real x) (real y))
+   (- (imag x) (imag y))))
+
+(define (complex-mult x y)
+  (make-complex
+   (- (* (real x) (real y))
+      (* (imag x) (imag y)))
+   (+ (* (real x) (real y))
+      (* (imag x) (imag y)))))
+
+(define (complex-conj x)
+  (make-complex (real x) (- (imag x))))
+
+; Some fake code below
+(define (complex-sqrt x) (+ x 1))
+
+"7A - Complex Squar Root, Gamma"
+;(define (complex-sqrt x)
+;  (let ((square (* x x)))
+;    (cond ((> a 0) (sqrt (/ (+ a (sqrt (+ (square a) (square b)))) 2)))
+;          ((< a 0) (cond ((< b 0) ((sqrt (/ (+ (* -1 a) (sqrt (+ (square a) 1)))2))))
+;                         ((= b 0) ((sqrt (/ (+ (* -1 a) (sqrt (square a))) 2))))
+;                         (else ((sqrt (/ (+ (* -1 a) (sqrt (+ (square a) 1))) 2)))))))))
+
+(define (complex-sqrt x)
+  (define (sgn b)
+    (cond ((< b 0) -1)
+          ((= b 0) 0)
+          (else 1)))
+    (let ((comp-root (sqrt (+ (* (real x)(real x))
+                              (* (imag x)(imag x))))))
+      (make-complex (sqrt (/ (+ (real x) root) 2))
+                    (* (sgn (imag x))
+                       (sqrt (/ (- root (real x)) 2))))))
+
+"7B - Complex Square Root Better, delta = signum(b)"
+;(define (complex-sqrt-better x)
+;  (let ((square (* x x)))
+;    (sqrt (/ (+ a (sqrt (+ (square a) (square b)))) 2))))
+
+(define (complex-sqrt-better x)
+  (define (sgn b)
+    (cond ((< b 0) -1)
+          (else 1)))
+  (let ((comp-root (sqrt (+ (* (real x)(real x))
+                              (* (imag x)(imag x))))))
+      (make-complex (sqrt (/ (+ (real x) root) 2))
+                    (* (sgn (imag x))
+                       (sqrt (/ (- root (real x)) 2))))))

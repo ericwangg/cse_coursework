@@ -1,0 +1,225 @@
+"Problem 1"
+
+"Part a"
+
+"(*(+ 22 42)(* 54 99))"
+
+(*
+ (+ 22 42)
+ (* 54 99))
+
+"Part b"
+
+"(* 99 (* 54 (+ 22 42)))"
+
+(* 99
+   (* 54
+      (+ 22 42)))
+
+"Part c"
+
+"(+ (* 64 102) (* 16 (/ 44 22)))"
+
+(+
+ (* 64 102)
+ (* 16
+    (/ 44 22)))
+
+"Part d"
+
+"Of course, the first two expressions evaluate to the same number. In what sense are they different? How is this reflected in the Scheme expression? // The two expressions are different in the order that the operations are done in is different. This is reflected in the scheme expression through the change in order of the numbers/operations. However, since multiplication is associative, the final answer does not change."
+
+"Part e"
+
+"In a conventional unparenthesized (infix) arithmetic expression, like 3 + 4 ∗ 5, we rely on a convention to determine which operation we apply first (the convention is typically called the “rules of precedence” or “order of operations”). Are rules of precedence necessary for evaluating arithmetic expressions in Scheme? Explain your answer. // No, order of operations is not necessary in Scheme because the interpreter simply reads through the code and evaluates and applies each smaller segment - the order of operations must be accounted for by the user."
+
+"Problem 2"
+
+"Part a"
+
+"[22] [42] + [54] [99] * *"
+
+"Part b"
+
+"[22] [42] + [54] * [99] *"
+
+"Part c"
+
+"[44] [22] / [16] * [64] [102] * +"
+
+"Problem 3"
+
+"Part a"
+
+"define inc"
+(define (inc x)
+  (+ x 1))
+
+"test case: (inc 2)"
+(inc 2)
+
+"test case: (inc 3)"
+(inc 3)
+
+"define inc2"
+(define (inc2 x)
+  (inc
+   (inc x)))
+
+"test case: (inc2 4)"
+(inc2 4)
+
+"test case: (inc2 7)"
+(inc2 7)
+
+"Part b"
+
+"define square"
+(define (square x)
+  (* x x))
+
+"test case: (square 2)"
+(square 2)
+
+"test case: (square 5)"
+(square 5)
+
+"define fourth"
+(define (fourth x)
+  (square
+   (square x)))
+
+"test case: (fourth 2)"
+(fourth 2)
+
+"test case: (fourth 5)"
+(fourth 5)
+
+"Part c"
+
+"define p"
+(define (p x)
+  (*
+   (fourth
+    (+ (square x) 1))
+   (square
+    (+
+     (* (fourth x) 16)
+     22))))
+
+"test case: (p 1)"
+(p 1)
+
+"test case: (p 0)"
+(p 0)
+
+"Part d"
+
+"define sixteenth"
+(define (sixteenth x)
+  (fourth
+   (fourth x)))
+
+"test case: (sixteenth 1.5)"
+(sixteenth 1.5)
+
+"test case: (sixteenth 1.2)"
+(sixteenth 1.2)
+
+"define sixty-fourth"
+(define (sixty-fourth x)
+  (fourth
+   (sixteenth x)))
+
+"test case: (sixty-fourth 1.2)"
+(sixty-fourth 1.2)
+
+"test case: (sixty-fourth 1.01)"
+(sixty-fourth 1.01)
+
+"Part e"
+
+"Reflect on your definition of sixty-fourth above. What would have been the difficulty of defining this merely in terms of ∗? // This would be difficult because you would need to type out 64 instances of *, leading to a lot of parentheses, grunt work, and confusion for any readers of the code."
+
+"Problem 4"
+
+"Part a"
+
+"Defining nomal"
+
+(define (normal x sig)
+  (*
+   (/ 1
+      (sqrt
+       (* 2 3.142
+          (square sig))))
+   (exp
+    (/
+     (* -1
+        (square x))
+     (* 2
+        (square sig))))))
+
+"test case 1: (normal 1 0.5)"
+
+(normal 1 0.5)
+
+"test case 2: (normal 0.1 3)"
+
+(normal 0.1 3)
+
+"Part b"
+
+"define fspiral"
+
+(define (fspiral theta)
+  (expt 1.618
+        (* theta
+           (/ 2 3.142))))
+
+"test case 1: (fspiral 3)"
+
+(fspiral 3)
+
+"test case 2: (fspiral 1)"
+
+(fspiral 1)
+
+"Part c"
+
+"define malth"
+
+(define (malth t p a)
+  (* p
+     (expt 2
+           (* a t))))
+
+"test case 1: (malth 10 100 3.4)"
+
+(malth 10 100 3.4)
+
+"test case 2: (malth 30 430 2)"
+
+(malth 30 430 2)
+
+"Part d"
+
+"define singlespecies"
+
+(define (singlespecies Pi Ps alpha t)
+  (/
+   (* Ps Pi)
+   (+ Pi
+      (*
+       (- Ps Pi)
+       (exp
+        (* -1
+           (* alpha t)))))))
+
+"test case 1: (singlespecies 10 1000 0.04 120)"
+
+(singlespecies 10 1000 0.04 120)
+
+"test case 2: (singlespecies 15 754 0.1 10)"
+
+(singlespecies 15 754 0.1 10)

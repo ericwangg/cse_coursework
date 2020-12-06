@@ -1,0 +1,905 @@
+server: waiting for connections on port 3129...
+server: new connection. max=1 fd=4
+buf = 
+ 0. Mutex traps (50)
+1. Nightmare of pointers (50)
+2. Return of recursion (50)
+3. Revenge of pipes (50)
+4. A socket's life (50)
+server: new connection. max=2 fd=5
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+buf = 
+ 0. Mutex traps (47)
+1. Nightmare of pointers (50)
+2. Return of recursion (50)
+3. Revenge of pipes (50)
+4. A socket's life (50)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=6
+buf = 
+ 0. Mutex traps (47)
+1. Nightmare of pointers (50)
+2. Return of recursion (50)
+3. Revenge of pipes (46)
+4. A socket's life (50)
+M_PROMPT
+server: thread using socket fd 6 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (47)
+1. Nightmare of pointers (50)
+2. Return of recursion (50)
+3. Revenge of pipes (42)
+4. A socket's life (50)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (47)
+1. Nightmare of pointers (50)
+2. Return of recursion (50)
+3. Revenge of pipes (41)
+4. A socket's life (50)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (47)
+1. Nightmare of pointers (48)
+2. Return of recursion (50)
+3. Revenge of pipes (41)
+4. A socket's life (50)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (46)
+1. Nightmare of pointers (48)
+2. Return of recursion (50)
+3. Revenge of pipes (41)
+4. A socket's life (50)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (46)
+1. Nightmare of pointers (47)
+2. Return of recursion (50)
+3. Revenge of pipes (41)
+4. A socket's life (50)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (46)
+1. Nightmare of pointers (47)
+2. Return of recursion (49)
+3. Revenge of pipes (41)
+4. A socket's life (50)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (46)
+1. Nightmare of pointers (47)
+2. Return of recursion (49)
+3. Revenge of pipes (41)
+4. A socket's life (46)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (46)
+1. Nightmare of pointers (47)
+2. Return of recursion (49)
+3. Revenge of pipes (41)
+4. A socket's life (42)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (44)
+1. Nightmare of pointers (47)
+2. Return of recursion (49)
+3. Revenge of pipes (41)
+4. A socket's life (42)
+M_PROMPT
+server: new connection. max=2 fd=5
+server: thread using socket fd 4 exiting ...
+buf = 
+ 0. Mutex traps (44)
+1. Nightmare of pointers (47)
+2. Return of recursion (49)
+3. Revenge of pipes (41)
+4. A socket's life (39)
+server: new connection. max=2 fd=6
+buf = 
+ 0. Mutex traps (44)
+1. Nightmare of pointers (47)
+2. Return of recursion (49)
+3. Revenge of pipes (41)
+4. A socket's life (39)
+M_PROMPT
+M_PROMPT
+server: thread using socket fd 6 exiting ...
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (44)
+1. Nightmare of pointers (47)
+2. Return of recursion (49)
+3. Revenge of pipes (41)
+4. A socket's life (34)
+buf = 
+ 0. Mutex traps (44)
+1. Nightmare of pointers (47)
+2. Return of recursion (49)
+3. Revenge of pipes (41)
+4. A socket's life (34)
+M_PROMPT
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=6
+buf = 
+ 0. Mutex traps (44)
+1. Nightmare of pointers (44)
+2. Return of recursion (49)
+3. Revenge of pipes (37)
+4. A socket's life (34)
+M_PROMPT
+server: thread using socket fd 6 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (44)
+1. Nightmare of pointers (44)
+2. Return of recursion (49)
+3. Revenge of pipes (37)
+4. A socket's life (30)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (44)
+1. Nightmare of pointers (44)
+2. Return of recursion (49)
+3. Revenge of pipes (34)
+4. A socket's life (30)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (44)
+1. Nightmare of pointers (44)
+2. Return of recursion (49)
+3. Revenge of pipes (33)
+4. A socket's life (30)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (44)
+1. Nightmare of pointers (44)
+2. Return of recursion (49)
+3. Revenge of pipes (29)
+4. A socket's life (30)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (40)
+1. Nightmare of pointers (44)
+2. Return of recursion (49)
+3. Revenge of pipes (29)
+4. A socket's life (30)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (40)
+1. Nightmare of pointers (44)
+2. Return of recursion (49)
+3. Revenge of pipes (28)
+4. A socket's life (30)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (40)
+1. Nightmare of pointers (44)
+2. Return of recursion (48)
+3. Revenge of pipes (28)
+4. A socket's life (30)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (40)
+1. Nightmare of pointers (42)
+2. Return of recursion (48)
+3. Revenge of pipes (28)
+4. A socket's life (30)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (40)
+1. Nightmare of pointers (42)
+2. Return of recursion (46)
+3. Revenge of pipes (28)
+4. A socket's life (30)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (40)
+1. Nightmare of pointers (42)
+2. Return of recursion (43)
+3. Revenge of pipes (28)
+4. A socket's life (30)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (40)
+1. Nightmare of pointers (38)
+2. Return of recursion (43)
+3. Revenge of pipes (28)
+4. A socket's life (30)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (40)
+1. Nightmare of pointers (38)
+2. Return of recursion (43)
+3. Revenge of pipes (28)
+4. A socket's life (29)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (40)
+1. Nightmare of pointers (38)
+2. Return of recursion (42)
+3. Revenge of pipes (28)
+4. A socket's life (29)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (40)
+1. Nightmare of pointers (38)
+2. Return of recursion (42)
+3. Revenge of pipes (26)
+4. A socket's life (29)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (40)
+1. Nightmare of pointers (38)
+2. Return of recursion (42)
+3. Revenge of pipes (22)
+4. A socket's life (29)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (40)
+1. Nightmare of pointers (36)
+2. Return of recursion (42)
+3. Revenge of pipes (22)
+4. A socket's life (29)
+buf = 
+ 0. Mutex traps (40)
+1. Nightmare of pointers (36)
+2. Return of recursion (42)
+3. Revenge of pipes (22)
+4. A socket's life (29)
+M_PROMPT
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=6
+buf = 
+ 0. Mutex traps (33)
+1. Nightmare of pointers (36)
+2. Return of recursion (42)
+3. Revenge of pipes (22)
+4. A socket's life (29)
+M_PROMPT
+server: thread using socket fd 6 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (33)
+1. Nightmare of pointers (36)
+2. Return of recursion (42)
+3. Revenge of pipes (22)
+4. A socket's life (27)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (33)
+1. Nightmare of pointers (36)
+2. Return of recursion (42)
+3. Revenge of pipes (22)
+4. A socket's life (24)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (33)
+1. Nightmare of pointers (36)
+2. Return of recursion (42)
+3. Revenge of pipes (21)
+4. A socket's life (24)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (33)
+1. Nightmare of pointers (36)
+2. Return of recursion (42)
+3. Revenge of pipes (20)
+4. A socket's life (24)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (33)
+1. Nightmare of pointers (36)
+2. Return of recursion (41)
+3. Revenge of pipes (20)
+4. A socket's life (24)
+buf = 
+ 0. Mutex traps (33)
+1. Nightmare of pointers (36)
+2. Return of recursion (41)
+3. Revenge of pipes (20)
+4. A socket's life (24)
+M_PROMPT
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=6
+buf = 
+ 0. Mutex traps (33)
+1. Nightmare of pointers (36)
+2. Return of recursion (41)
+3. Revenge of pipes (12)
+4. A socket's life (24)
+M_PROMPT
+server: thread using socket fd 6 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (32)
+1. Nightmare of pointers (36)
+2. Return of recursion (41)
+3. Revenge of pipes (12)
+4. A socket's life (24)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (32)
+1. Nightmare of pointers (36)
+2. Return of recursion (40)
+3. Revenge of pipes (12)
+4. A socket's life (24)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (32)
+1. Nightmare of pointers (36)
+2. Return of recursion (36)
+3. Revenge of pipes (12)
+4. A socket's life (24)
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (32)
+1. Nightmare of pointers (36)
+2. Return of recursion (36)
+3. Revenge of pipes (12)
+4. A socket's life (24)
+M_PROMPT
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=6
+buf = 
+ 0. Mutex traps (28)
+1. Nightmare of pointers (36)
+2. Return of recursion (35)
+3. Revenge of pipes (12)
+4. A socket's life (24)
+M_PROMPT
+server: thread using socket fd 6 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (28)
+1. Nightmare of pointers (36)
+2. Return of recursion (35)
+3. Revenge of pipes (10)
+4. A socket's life (24)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (28)
+1. Nightmare of pointers (33)
+2. Return of recursion (35)
+3. Revenge of pipes (10)
+4. A socket's life (24)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (28)
+1. Nightmare of pointers (33)
+2. Return of recursion (35)
+3. Revenge of pipes (6)
+4. A socket's life (24)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (28)
+1. Nightmare of pointers (33)
+2. Return of recursion (34)
+3. Revenge of pipes (6)
+4. A socket's life (24)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (28)
+1. Nightmare of pointers (33)
+2. Return of recursion (33)
+3. Revenge of pipes (6)
+4. A socket's life (24)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (28)
+1. Nightmare of pointers (33)
+2. Return of recursion (33)
+3. Revenge of pipes (6)
+4. A socket's life (21)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (28)
+1. Nightmare of pointers (33)
+2. Return of recursion (33)
+3. Revenge of pipes (4)
+4. A socket's life (21)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (28)
+1. Nightmare of pointers (32)
+2. Return of recursion (33)
+3. Revenge of pipes (4)
+4. A socket's life (21)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (28)
+1. Nightmare of pointers (32)
+2. Return of recursion (33)
+3. Revenge of pipes (3)
+4. A socket's life (21)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (28)
+1. Nightmare of pointers (30)
+2. Return of recursion (33)
+3. Revenge of pipes (3)
+4. A socket's life (21)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (28)
+1. Nightmare of pointers (29)
+2. Return of recursion (33)
+3. Revenge of pipes (3)
+4. A socket's life (21)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (24)
+1. Nightmare of pointers (29)
+2. Return of recursion (33)
+3. Revenge of pipes (3)
+4. A socket's life (21)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (24)
+1. Nightmare of pointers (29)
+2. Return of recursion (33)
+3. Revenge of pipes (3)
+4. A socket's life (17)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (24)
+1. Nightmare of pointers (29)
+2. Return of recursion (33)
+3. Revenge of pipes (3)
+4. A socket's life (13)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (24)
+1. Nightmare of pointers (29)
+2. Return of recursion (33)
+3. Revenge of pipes (3)
+4. A socket's life (10)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (24)
+1. Nightmare of pointers (29)
+2. Return of recursion (29)
+3. Revenge of pipes (3)
+4. A socket's life (10)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (24)
+1. Nightmare of pointers (29)
+2. Return of recursion (27)
+3. Revenge of pipes (3)
+4. A socket's life (10)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (23)
+1. Nightmare of pointers (29)
+2. Return of recursion (27)
+3. Revenge of pipes (3)
+4. A socket's life (10)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=2 fd=4
+buf = 
+ 0. Mutex traps (23)
+1. Nightmare of pointers (29)
+2. Return of recursion (23)
+3. Revenge of pipes (3)
+4. A socket's life (10)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=2 fd=5
+buf = 
+ 0. Mutex traps (23)
+1. Nightmare of pointers (29)
+2. Return of recursion (23)
+3. Revenge of pipes (3)
+4. A socket's life (7)
+M_PROMPT
+server: new connection. max=2 fd=4
+server: new connection. max=3 fd=6
+buf = 
+ 0. Mutex traps (23)
+1. Nightmare of pointers (29)
+2. Return of recursion (23)
+4. A socket's life (7)
+buf = 
+ 0. Mutex traps (23)
+1. Nightmare of pointers (29)
+2. Return of recursion (23)
+4. A socket's life (7)
+server: thread using socket fd 5 exiting ...
+server: new connection. max=3 fd=7
+M_PROMPT
+buf = 
+ 0. Mutex traps (23)
+1. Nightmare of pointers (29)
+2. Return of recursion (23)
+4. A socket's life (7)
+M_PROMPT
+server: thread using socket fd 6 exiting ...
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: thread using socket fd 7 exiting ...
+server: new connection. max=3 fd=5
+buf = 
+ 0. Mutex traps (23)
+1. Nightmare of pointers (27)
+2. Return of recursion (20)
+4. A socket's life (5)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=3 fd=4
+buf = 
+ 0. Mutex traps (23)
+1. Nightmare of pointers (27)
+2. Return of recursion (20)
+4. A socket's life (3)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=3 fd=5
+buf = 
+ 0. Mutex traps (23)
+1. Nightmare of pointers (27)
+2. Return of recursion (20)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=3 fd=4
+server: new connection. max=3 fd=5
+buf = 
+ 0. Mutex traps (22)
+1. Nightmare of pointers (27)
+2. Return of recursion (20)
+4. A socket's life (1)
+buf = 
+ 0. Mutex traps (22)
+1. Nightmare of pointers (27)
+2. Return of recursion (20)
+4. A socket's life (1)
+M_PROMPT
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: thread using socket fd 5 exiting ...
+server: new connection. max=3 fd=6
+buf = 
+ 0. Mutex traps (22)
+1. Nightmare of pointers (25)
+2. Return of recursion (16)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 6 exiting ...
+server: new connection. max=3 fd=4
+buf = 
+ 0. Mutex traps (22)
+1. Nightmare of pointers (23)
+2. Return of recursion (16)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=3 fd=5
+buf = 
+ 0. Mutex traps (20)
+1. Nightmare of pointers (23)
+2. Return of recursion (16)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=3 fd=4
+buf = 
+ 0. Mutex traps (20)
+1. Nightmare of pointers (23)
+2. Return of recursion (15)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=3 fd=5
+buf = 
+ 0. Mutex traps (20)
+1. Nightmare of pointers (23)
+2. Return of recursion (14)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=3 fd=4
+server: new connection. max=3 fd=5
+buf = 
+ 0. Mutex traps (20)
+1. Nightmare of pointers (19)
+2. Return of recursion (14)
+4. A socket's life (1)
+buf = 
+ 0. Mutex traps (20)
+1. Nightmare of pointers (19)
+2. Return of recursion (14)
+4. A socket's life (1)
+M_PROMPT
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: thread using socket fd 4 exiting ...
+server: new connection. max=3 fd=6
+buf = 
+ 0. Mutex traps (20)
+1. Nightmare of pointers (16)
+2. Return of recursion (11)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 6 exiting ...
+server: new connection. max=3 fd=4
+buf = 
+ 0. Mutex traps (20)
+1. Nightmare of pointers (16)
+2. Return of recursion (8)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=3 fd=5
+buf = 
+ 0. Mutex traps (20)
+1. Nightmare of pointers (16)
+2. Return of recursion (8)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=3 fd=4
+buf = 
+ 0. Mutex traps (17)
+1. Nightmare of pointers (16)
+2. Return of recursion (8)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=3 fd=5
+buf = 
+ 0. Mutex traps (17)
+1. Nightmare of pointers (12)
+2. Return of recursion (8)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=3 fd=4
+buf = 
+ 0. Mutex traps (13)
+1. Nightmare of pointers (12)
+2. Return of recursion (8)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=3 fd=5
+buf = 
+ 0. Mutex traps (10)
+1. Nightmare of pointers (12)
+2. Return of recursion (8)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=3 fd=4
+buf = 
+ 0. Mutex traps (8)
+1. Nightmare of pointers (12)
+2. Return of recursion (8)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=3 fd=5
+buf = 
+ 0. Mutex traps (8)
+1. Nightmare of pointers (12)
+2. Return of recursion (5)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=3 fd=4
+server: new connection. max=3 fd=5
+buf = 
+ 0. Mutex traps (6)
+1. Nightmare of pointers (12)
+2. Return of recursion (5)
+4. A socket's life (1)
+buf = 
+ 0. Mutex traps (6)
+1. Nightmare of pointers (12)
+2. Return of recursion (5)
+4. A socket's life (1)
+M_PROMPT
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: thread using socket fd 5 exiting ...
+server: new connection. max=3 fd=6
+buf = 
+ 0. Mutex traps (3)
+1. Nightmare of pointers (12)
+2. Return of recursion (5)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 6 exiting ...
+server: new connection. max=3 fd=4
+buf = 
+ 0. Mutex traps (3)
+1. Nightmare of pointers (8)
+2. Return of recursion (5)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=3 fd=5
+buf = 
+ 1. Nightmare of pointers (8)
+2. Return of recursion (5)
+4. A socket's life (1)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=3 fd=4
+buf = 
+ 1. Nightmare of pointers (8)
+2. Return of recursion (5)
+M_PROMPT
+server: new connection. max=3 fd=5
+server: thread using socket fd 4 exiting ...
+buf = 
+ 1. Nightmare of pointers (8)
+2. Return of recursion (1)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: new connection. max=3 fd=6
+buf = 
+ 1. Nightmare of pointers (8)
+2. Return of recursion (1)
+M_PROMPT
+server: thread using socket fd 6 exiting ...
+server: new connection. max=3 fd=4
+buf = 
+ 1. Nightmare of pointers (5)
+2. Return of recursion (1)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=3 fd=5
+buf = 
+ 1. Nightmare of pointers (5)
+2. Return of recursion (1)
+M_PROMPT
+server: new connection. max=3 fd=4
+buf = 
+ 1. Nightmare of pointers (5)
+2. Return of recursion (1)
+M_PROMPT
+server: thread using socket fd 5 exiting ...
+server: thread using socket fd 4 exiting ...
+server: new connection. max=3 fd=6
+buf = 
+ 1. Nightmare of pointers (1)
+2. Return of recursion (1)
+M_PROMPT
+server: thread using socket fd 6 exiting ...
+server: new connection. max=3 fd=4
+buf = 
+ 1. Nightmare of pointers (1)
+2. Return of recursion (1)
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+server: new connection. max=3 fd=5
+buf = 
+ 1. Nightmare of pointers (1)
+server: new connection. max=3 fd=4
+M_PROMPT
+buf = 
+ 1. Nightmare of pointers (1)
+server: new connection. max=3 fd=6
+server: new connection. max=4 fd=7
+M_PROMPT
+server: thread using socket fd 4 exiting ...
+M_SOLDOUT
+server: thread using socket fd 7 exiting ...
+server: thread using socket fd 5 exiting ...
+M_SOLDOUT
+server: thread using socket fd 6 exiting ...
+server: new connection. max=4 fd=8
+M_SOLDOUT
+server: thread using socket fd 8 exiting ...
+server: new connection. max=4 fd=4
+M_SOLDOUT
+server: thread using socket fd 4 exiting ...

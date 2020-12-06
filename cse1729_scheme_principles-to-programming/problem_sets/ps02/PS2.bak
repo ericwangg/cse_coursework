@@ -1,0 +1,26 @@
+"Problem Set 2 - Eric Wang"
+
+"Problem 1A"
+(define (odd-sum
+
+         
+  
+         
+
+"Problem 2"
+(define (k-product k
+  (= k 1)
+     1
+     (* (- 1 (/ 1 (expt k 2)))
+        (k-product (- k 1)))))
+
+
+"P2 Test - 6"
+(k-product 3)
+
+"Problem 3"
+(define (babylonian x
+                    
+"Problem 4"
+(define (
+

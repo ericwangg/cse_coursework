@@ -1,0 +1,7 @@
+"Problem 6 - Eric Wang"
+
+"6A - ENcode, Pairing Function computation"
+(define (encode x y)
+  (+ (* 0.5 (+ x (- y 2)) (+ x (- y 1))) x))
+
+"6B - Decode, Integer to Pair"

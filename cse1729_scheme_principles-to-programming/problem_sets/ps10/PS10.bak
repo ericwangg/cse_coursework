@@ -1,0 +1,69 @@
+"Problem Set 10 - Eric Wang"
+
+;; stream primitives
+(define-syntax cons-stream
+  (syntax-rules ()
+    ((cons-stream head tail)
+     (cons head (delay tail)))))
+
+(define (stream-car x)
+  (car x))
+
+(define (stream-cdr x)
+  (force (cdr x)))
+
+(define empty-stream? null?)
+
+;; utiity for tracing function calls 
+(define (tracer name . values)
+  ;  usage: if at start of function defined (foo a b c)
+  ;  put in (tracer 'foo a b c)
+  ;  interesting to put into something that is delayed
+  (define (display-spaced item)
+    (display item)
+    (display " "))
+  (display-spaced name)
+  (display-spaced "with parameter(s):")
+  (for-each display-spaced values)
+  (newline))
+;;;;;;;;;;;;;;;;
+
+(define (enumerate-integers-from a)
+  (cons-stream a (enumerate-intergers from (+ a 1))))
+
+(define (prime? x)
+  (define (is-factor? k x)
+    (= (modulo x k) 0))
+  (define (has-factor-le? j)
+    (cond ((< j 2) #f)
+          ((is-factor? j x) #t)
+          (else
+           (has-factor-le? (- j 1))))
+    (not (has-factor-le? (round (sqrt x))))))
+
+(define (stream-filter f str)
+  (cond ((empty-stream? str) '())
+        ((f (stream-car str))
+         (cons-stream (stream-car str) (stream-filter f (stream-cdr str))))
+        (else (stream-filter f (stream-cdr str)))))
+
+(define (stream-map f str)
+  (if (empty-stream? str)
+      '()
+      (cons-stream (f (stream-car str))
+                   (stream-map f (stream-cdr str)))))
+
+"1A - primes, Stream primes"
+(define (primes)
+  (stream-filter
+   prime?
+   (enumerate-integers-from 2)))
+
+"1B - mersenne-candidates, Mersenne (2^k-1)"
+(define (mersenne-candidates)
+  (stream-map (lambda (k) (- (expt 2 k) 1))))
+
+"1C - mersenne-primes, Mersenne primes"
+(define (mersenne-primes)
+  (stream-filter primes (mersenne-candidates)))
+

@@ -1,0 +1,53 @@
+
+
+
+21	Computer Science		
+17	Chemistry		
+15	Physics		
+12	Mathematics I 		
+13	Mathematics III 		
+4	History		
+3	Geography		
+2	Biology		
+			
+			
+			
+			
+31	L. Gatlin	Holcomb	F
+11	N. Park 	Whitney	M 
+22	S. Conners	Holcomb	F
+24	D. Davisson	E. Quad	M
+20	I. Blake	Holcomb	M
+4	T. Smith	Cambridge	F
+1	N. J. Sloane	Whitney	F
+14	D. E. Knuth	Whitney	M
+6	J. Brown	Whitney	M
+2	M. Roberts	Cambridge	M
+33	U. Smith	Cambridge	F
+			
+			
+			
+			
+2	20	71	
+2	31	82	
+2	14	63	
+2	2	69	
+2	24	72	
+2	33	94	
+3	20	80	
+3	14	58	
+12	24	67	
+12	4	82	
+12	14	37	
+12	2	78	
+12	33	90	
+13	33	78	
+13	4	92	
+13	24	78	
+13	6	44	
+15	33	97	
+15	4	72	
+15	11	NULL	
+15	14	61	
+15	6	52	
+15	24	83	

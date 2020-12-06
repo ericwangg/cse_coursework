@@ -1,0 +1,539 @@
+MEM_D 0x00400000 0x20010001 536936449
+MEM_D 0x00400004 0x0381E020 58843168
+MEM_D 0x00400008 0x2002FFFE 537067518
+MEM_D 0x0040000C 0x0381E020 58843168
+MEM_D 0x00400010 0x00221825 2234405
+MEM_D 0x00400014 0x00232024 2301988
+MEM_D 0x00400018 0x2005000A 537198602
+MEM_D 0x0040001C 0x10A0FFF8 278986744
+MEM_D 0x00400020 0x10A50005 279248901
+MEM_D 0x00400024 0x00852822 8726562
+MEM_D 0x00400028 0x20C603E8 549848040
+MEM_D 0x0040002C 0x8CC7FFFC 2361917436
+MEM_D 0x00400030 0xACC80064 2898788452
+MEM_D 0x00400034 0x0810000F 135266319
+MEM_D 0x00400038 0x08100009 135266313
+==========================================
+Cycle 1
+PC=0x00400000 4194304
+instruction=0x20010001 536936449
+opcode=0b001000 8
+funct=0b000001 1
+rs=0b00000 0
+rt=0b00001 1
+rd=0b00000 0
+immediate=0x0001 1
+RegDst=0
+Jump=0
+Branch=0
+MemRead=0
+MemtoReg=0
+ALUOp=0b00 0
+MemWrite=0
+ALUSrc=1
+RegWrite=1
+Sign_extended_immediate=0x00000001 1
+ALU_operation=0b0010 2
+Branch_address=0x00400008 4194312
+Jump_address=0x00040004 262148
+Write_register=0b00001 1
+RF_read_data_1=0x00000000 0
+RF_read_data_2=0x00000000 0
+ALU_input_2=0x00000001 1
+ALU_result=0x00000001 1
+Zero=0
+MEM_read_data=0x00000000 0
+Write_data=0x00000001 1
+PCSrc=0
+PC_branch=0x00400004 4194308
+PC_new=0x00400004 4194308
+==========================================
+Cycle 2
+PC=0x00400004 4194308
+instruction=0x0381E020 58843168
+opcode=0b000000 0
+funct=0b100000 32
+rs=0b11100 28
+rt=0b00001 1
+rd=0b11100 28
+immediate=0xE020 57376
+RegDst=1
+Jump=0
+Branch=0
+MemRead=0
+MemtoReg=0
+ALUOp=0b10 2
+MemWrite=0
+ALUSrc=0
+RegWrite=1
+Sign_extended_immediate=0xFFFFE020 -8160
+ALU_operation=0b0010 2
+Branch_address=0x003F8088 4161672
+Jump_address=0x0E078080 235372672
+Write_register=0b11100 28
+RF_read_data_1=0x00000000 0
+RF_read_data_2=0x00000001 1
+ALU_input_2=0x00000001 1
+ALU_result=0x00000001 1
+Zero=0
+MEM_read_data=0x00000000 0
+Write_data=0x00000001 1
+PCSrc=0
+PC_branch=0x00400008 4194312
+PC_new=0x00400008 4194312
+==========================================
+Cycle 3
+PC=0x00400008 4194312
+instruction=0x2002FFFE 537067518
+opcode=0b001000 8
+funct=0b111110 62
+rs=0b00000 0
+rt=0b00010 2
+rd=0b11111 31
+immediate=0xFFFE 65534
+RegDst=0
+Jump=0
+Branch=0
+MemRead=0
+MemtoReg=0
+ALUOp=0b00 0
+MemWrite=0
+ALUSrc=1
+RegWrite=1
+Sign_extended_immediate=0xFFFFFFFE -2
+ALU_operation=0b0010 2
+Branch_address=0x00400004 4194308
+Jump_address=0x000BFFF8 786424
+Write_register=0b00010 2
+RF_read_data_1=0x00000000 0
+RF_read_data_2=0x00000000 0
+ALU_input_2=0xFFFFFFFE -2
+ALU_result=0xFFFFFFFE -2
+Zero=0
+MEM_read_data=0x00000000 0
+Write_data=0xFFFFFFFE -2
+PCSrc=0
+PC_branch=0x0040000C 4194316
+PC_new=0x0040000C 4194316
+==========================================
+Cycle 4
+PC=0x0040000C 4194316
+instruction=0x0381E020 58843168
+opcode=0b000000 0
+funct=0b100000 32
+rs=0b11100 28
+rt=0b00001 1
+rd=0b11100 28
+immediate=0xE020 57376
+RegDst=1
+Jump=0
+Branch=0
+MemRead=0
+MemtoReg=0
+ALUOp=0b10 2
+MemWrite=0
+ALUSrc=0
+RegWrite=1
+Sign_extended_immediate=0xFFFFE020 -8160
+ALU_operation=0b0010 2
+Branch_address=0x003F8090 4161680
+Jump_address=0x0E078080 235372672
+Write_register=0b11100 28
+RF_read_data_1=0x00000001 1
+RF_read_data_2=0x00000001 1
+ALU_input_2=0x00000001 1
+ALU_result=0x00000002 2
+Zero=0
+MEM_read_data=0x00000000 0
+Write_data=0x00000002 2
+PCSrc=0
+PC_branch=0x00400010 4194320
+PC_new=0x00400010 4194320
+==========================================
+Cycle 5
+PC=0x00400010 4194320
+instruction=0x00221825 2234405
+opcode=0b000000 0
+funct=0b100101 37
+rs=0b00001 1
+rt=0b00010 2
+rd=0b00011 3
+immediate=0x1825 6181
+RegDst=1
+Jump=0
+Branch=0
+MemRead=0
+MemtoReg=0
+ALUOp=0b10 2
+MemWrite=0
+ALUSrc=0
+RegWrite=1
+Sign_extended_immediate=0x00001825 6181
+ALU_operation=0b0001 1
+Branch_address=0x004060A8 4219048
+Jump_address=0x00886094 8937620
+Write_register=0b00011 3
+RF_read_data_1=0x00000001 1
+RF_read_data_2=0xFFFFFFFE -2
+ALU_input_2=0xFFFFFFFE -2
+ALU_result=0xFFFFFFFF -1
+Zero=0
+MEM_read_data=0x00000000 0
+Write_data=0xFFFFFFFF -1
+PCSrc=0
+PC_branch=0x00400014 4194324
+PC_new=0x00400014 4194324
+==========================================
+Cycle 6
+PC=0x00400014 4194324
+instruction=0x00232024 2301988
+opcode=0b000000 0
+funct=0b100100 36
+rs=0b00001 1
+rt=0b00011 3
+rd=0b00100 4
+immediate=0x2024 8228
+RegDst=1
+Jump=0
+Branch=0
+MemRead=0
+MemtoReg=0
+ALUOp=0b10 2
+MemWrite=0
+ALUSrc=0
+RegWrite=1
+Sign_extended_immediate=0x00002024 8228
+ALU_operation=0b0000 0
+Branch_address=0x004080A8 4227240
+Jump_address=0x008C8090 9207952
+Write_register=0b00100 4
+RF_read_data_1=0x00000001 1
+RF_read_data_2=0xFFFFFFFF -1
+ALU_input_2=0xFFFFFFFF -1
+ALU_result=0x00000001 1
+Zero=0
+MEM_read_data=0x00000000 0
+Write_data=0x00000001 1
+PCSrc=0
+PC_branch=0x00400018 4194328
+PC_new=0x00400018 4194328
+==========================================
+Cycle 7
+PC=0x00400018 4194328
+instruction=0x2005000A 537198602
+opcode=0b001000 8
+funct=0b001010 10
+rs=0b00000 0
+rt=0b00101 5
+rd=0b00000 0
+immediate=0x000A 10
+RegDst=0
+Jump=0
+Branch=0
+MemRead=0
+MemtoReg=0
+ALUOp=0b00 0
+MemWrite=0
+ALUSrc=1
+RegWrite=1
+Sign_extended_immediate=0x0000000A 10
+ALU_operation=0b0010 2
+Branch_address=0x00400044 4194372
+Jump_address=0x00140028 1310760
+Write_register=0b00101 5
+RF_read_data_1=0x00000000 0
+RF_read_data_2=0x00000000 0
+ALU_input_2=0x0000000A 10
+ALU_result=0x0000000A 10
+Zero=0
+MEM_read_data=0x00000000 0
+Write_data=0x0000000A 10
+PCSrc=0
+PC_branch=0x0040001C 4194332
+PC_new=0x0040001C 4194332
+==========================================
+Cycle 8
+PC=0x0040001C 4194332
+instruction=0x10A0FFF8 278986744
+opcode=0b000100 4
+funct=0b111000 56
+rs=0b00101 5
+rt=0b00000 0
+rd=0b11111 31
+immediate=0xFFF8 65528
+RegDst=0
+Jump=0
+Branch=1
+MemRead=0
+MemtoReg=0
+ALUOp=0b01 1
+MemWrite=0
+ALUSrc=0
+RegWrite=0
+Sign_extended_immediate=0xFFFFFFF8 -8
+ALU_operation=0b0110 6
+Branch_address=0x00400000 4194304
+Jump_address=0x0283FFE0 42205152
+Write_register=0b00000 0
+RF_read_data_1=0x0000000A 10
+RF_read_data_2=0x00000000 0
+ALU_input_2=0x00000000 0
+ALU_result=0x0000000A 10
+Zero=0
+MEM_read_data=0x00000000 0
+Write_data=0x0000000A 10
+PCSrc=0
+PC_branch=0x00400020 4194336
+PC_new=0x00400020 4194336
+==========================================
+Cycle 9
+PC=0x00400020 4194336
+instruction=0x10A50005 279248901
+opcode=0b000100 4
+funct=0b000101 5
+rs=0b00101 5
+rt=0b00101 5
+rd=0b00000 0
+immediate=0x0005 5
+RegDst=0
+Jump=0
+Branch=1
+MemRead=0
+MemtoReg=0
+ALUOp=0b01 1
+MemWrite=0
+ALUSrc=0
+RegWrite=0
+Sign_extended_immediate=0x00000005 5
+ALU_operation=0b0110 6
+Branch_address=0x00400038 4194360
+Jump_address=0x02940014 43253780
+Write_register=0b00101 5
+RF_read_data_1=0x0000000A 10
+RF_read_data_2=0x0000000A 10
+ALU_input_2=0x0000000A 10
+ALU_result=0x00000000 0
+Zero=1
+MEM_read_data=0x00000000 0
+Write_data=0x00000000 0
+PCSrc=1
+PC_branch=0x00400038 4194360
+PC_new=0x00400038 4194360
+==========================================
+Cycle 10
+PC=0x00400038 4194360
+instruction=0x08100009 135266313
+opcode=0b000010 2
+funct=0b001001 9
+rs=0b00000 0
+rt=0b10000 16
+rd=0b00000 0
+immediate=0x0009 9
+RegDst=0
+Jump=1
+Branch=0
+MemRead=0
+MemtoReg=0
+ALUOp=0b00 0
+MemWrite=0
+ALUSrc=0
+RegWrite=0
+Sign_extended_immediate=0x00000009 9
+ALU_operation=0b0010 2
+Branch_address=0x00400060 4194400
+Jump_address=0x00400024 4194340
+Write_register=0b10000 16
+RF_read_data_1=0x00000000 0
+RF_read_data_2=0x00000000 0
+ALU_input_2=0x00000000 0
+ALU_result=0x00000000 0
+Zero=1
+MEM_read_data=0x00000000 0
+Write_data=0x00000000 0
+PCSrc=0
+PC_branch=0x0040003C 4194364
+PC_new=0x00400024 4194340
+==========================================
+Cycle 11
+PC=0x00400024 4194340
+instruction=0x00852822 8726562
+opcode=0b000000 0
+funct=0b100010 34
+rs=0b00100 4
+rt=0b00101 5
+rd=0b00101 5
+immediate=0x2822 10274
+RegDst=1
+Jump=0
+Branch=0
+MemRead=0
+MemtoReg=0
+ALUOp=0b10 2
+MemWrite=0
+ALUSrc=0
+RegWrite=1
+Sign_extended_immediate=0x00002822 10274
+ALU_operation=0b0110 6
+Branch_address=0x0040A0B0 4235440
+Jump_address=0x0214A088 34906248
+Write_register=0b00101 5
+RF_read_data_1=0x00000001 1
+RF_read_data_2=0x0000000A 10
+ALU_input_2=0x0000000A 10
+ALU_result=0xFFFFFFF7 -9
+Zero=0
+MEM_read_data=0x00000000 0
+Write_data=0xFFFFFFF7 -9
+PCSrc=0
+PC_branch=0x00400028 4194344
+PC_new=0x00400028 4194344
+==========================================
+Cycle 12
+PC=0x00400028 4194344
+instruction=0x20C603E8 549848040
+opcode=0b001000 8
+funct=0b101000 40
+rs=0b00110 6
+rt=0b00110 6
+rd=0b00000 0
+immediate=0x03E8 1000
+RegDst=0
+Jump=0
+Branch=0
+MemRead=0
+MemtoReg=0
+ALUOp=0b00 0
+MemWrite=0
+ALUSrc=1
+RegWrite=1
+Sign_extended_immediate=0x000003E8 1000
+ALU_operation=0b0010 2
+Branch_address=0x00400FCC 4198348
+Jump_address=0x03180FA0 51908512
+Write_register=0b00110 6
+RF_read_data_1=0x00000000 0
+RF_read_data_2=0x00000000 0
+ALU_input_2=0x000003E8 1000
+ALU_result=0x000003E8 1000
+Zero=0
+MEM_read_data=0x00000000 0
+Write_data=0x000003E8 1000
+PCSrc=0
+PC_branch=0x0040002C 4194348
+PC_new=0x0040002C 4194348
+==========================================
+Cycle 13
+PC=0x0040002C 4194348
+instruction=0x8CC7FFFC 2361917436
+opcode=0b100011 35
+funct=0b111100 60
+rs=0b00110 6
+rt=0b00111 7
+rd=0b11111 31
+immediate=0xFFFC 65532
+RegDst=0
+Jump=0
+Branch=0
+MemRead=1
+MemtoReg=1
+ALUOp=0b00 0
+MemWrite=0
+ALUSrc=1
+RegWrite=1
+Sign_extended_immediate=0xFFFFFFFC -4
+ALU_operation=0b0010 2
+Branch_address=0x00400020 4194336
+Jump_address=0x031FFFF0 52428784
+Write_register=0b00111 7
+RF_read_data_1=0x000003E8 1000
+RF_read_data_2=0x00000000 0
+ALU_input_2=0xFFFFFFFC -4
+ALU_result=0x000003E4 996
+Zero=0
+MEM_read_data=0x00000000 0
+Write_data=0x00000000 0
+PCSrc=0
+PC_branch=0x00400030 4194352
+PC_new=0x00400030 4194352
+==========================================
+Cycle 14
+PC=0x00400030 4194352
+instruction=0xACC80064 2898788452
+opcode=0b101011 43
+funct=0b100100 36
+rs=0b00110 6
+rt=0b01000 8
+rd=0b00000 0
+immediate=0x0064 100
+RegDst=0
+Jump=0
+Branch=0
+MemRead=0
+MemtoReg=0
+ALUOp=0b00 0
+MemWrite=1
+ALUSrc=1
+RegWrite=0
+Sign_extended_immediate=0x00000064 100
+ALU_operation=0b0010 2
+Branch_address=0x004001C4 4194756
+Jump_address=0x03200190 52429200
+Write_register=0b01000 8
+RF_read_data_1=0x000003E8 1000
+RF_read_data_2=0x00000000 0
+ALU_input_2=0x00000064 100
+ALU_result=0x0000044C 1100
+Zero=0
+MEM_read_data=0x00000000 0
+Write_data=0x0000044C 1100
+PCSrc=0
+PC_branch=0x00400034 4194356
+PC_new=0x00400034 4194356
+==========================================
+Cycle 15
+PC=0x00400034 4194356
+instruction=0x0810000F 135266319
+opcode=0b000010 2
+funct=0b001111 15
+rs=0b00000 0
+rt=0b10000 16
+rd=0b00000 0
+immediate=0x000F 15
+RegDst=0
+Jump=1
+Branch=0
+MemRead=0
+MemtoReg=0
+ALUOp=0b00 0
+MemWrite=0
+ALUSrc=0
+RegWrite=0
+Sign_extended_immediate=0x0000000F 15
+ALU_operation=0b0010 2
+Branch_address=0x00400074 4194420
+Jump_address=0x0040003C 4194364
+Write_register=0b10000 16
+RF_read_data_1=0x00000000 0
+RF_read_data_2=0x00000000 0
+ALU_input_2=0x00000000 0
+ALU_result=0x00000000 0
+Zero=1
+MEM_read_data=0x00000000 0
+Write_data=0x00000000 0
+PCSrc=0
+PC_branch=0x00400038 4194360
+PC_new=0x0040003C 4194364
+==========================================
+Cycle 16
+PC=0x0040003C 4194364
+No More Instructions
+$00=0x00000000(          0)    $01=0x00000001(          1)    $02=0xFFFFFFFE(         -2)    $03=0xFFFFFFFF(         -1)    
+$04=0x00000001(          1)    $05=0xFFFFFFF7(         -9)    $06=0x000003E8(       1000)    $07=0x00000000(          0)    
+$08=0x00000000(          0)    $09=0x00000000(          0)    $10=0x00000000(          0)    $11=0x00000000(          0)    
+$12=0x00000000(          0)    $13=0x00000000(          0)    $14=0x00000000(          0)    $15=0x00000000(          0)    
+$16=0x00000000(          0)    $17=0x00000000(          0)    $18=0x00000000(          0)    $19=0x00000000(          0)    
+$20=0x00000000(          0)    $21=0x00000000(          0)    $22=0x00000000(          0)    $23=0x00000000(          0)    
+$24=0x00000000(          0)    $25=0x00000000(          0)    $26=0x00000000(          0)    $27=0x00000000(          0)    
+$28=0x00000002(          2)    $29=0x00000000(          0)    $30=0x00000000(          0)    $31=0x00000000(          0)    
+MEM_D 0x0000044C 0x00000000 0
+Number of cycles=15

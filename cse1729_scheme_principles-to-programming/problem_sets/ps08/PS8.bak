@@ -1,0 +1,51 @@
+"Problem Set 8 - Eric Wang"
+(define (make-tree value left right) (list value left right))
+
+(define (value tree) (car tree))
+
+(define (left tree) (cadr tree))
+
+(define (right tree) (caddr tree))
+
+(define empty-tree? null?)
+
+(define (leaf? T)
+  (and (empty-tree? (left T)) (empty-tree? (right T))))
+
+(define (two-subtrees? T)
+  (and (not (empty-tree? (left T))) (not (empty-tree? (right T)))))
+
+(define (one-subtree? T)
+  (or (not (empty-tree? (left T))) (not (empty-tree? (right T)))))
+
+(define example
+  (make-tree
+   '+
+   (make-tree
+    '* (make-tree 2 '() '()) (make-tree 3 '() '()))
+   (make-tree
+    '*
+    (make-tree
+     '+
+     (make-tree 4 '() '())
+     (make-tree '- '() (make-tree 5 '() '())))
+    (make-tree '1/ '() (make-tree 6 '() '())))))
+
+"1 - BST Check, returns true for search tree property"
+(define (bst? T)
+  (cond ((emptytree? T) #t)
+        ((leaf? T) #t)
+        ((and (not (empty-tree? (right T)))
+              (< (bst-smallest (right T)) (valueT)))
+         #f)
+        ((and (not (empty-tree? (left T)))
+              (> (bst-largest (left T)) (value T)))
+         #f)
+        ((and (bst? (left T)) (bst (right T)))
+         #t)
+        (else #t)))
+
+
+(bst? example)
+
+"2 - 
